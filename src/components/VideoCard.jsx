@@ -5,11 +5,7 @@ export default function VideoCard({ video }) {
 
   return (
     <div
-      className={`card-hover flex flex-col h-full rounded-2xl overflow-hidden border transition-all ${
-        video.isAvailable
-          ? 'bg-zinc-900 border-white/5 hover:border-white/20'
-          : 'bg-zinc-950 border-white/5 opacity-60'
-      }`}
+      className="card-hover flex flex-col h-full rounded-2xl overflow-hidden border border-white/5 hover:border-white/20 bg-zinc-900 transition-all"
     >
       {/* Poster */}
       <div className="relative aspect-[2/3] overflow-hidden bg-zinc-800 flex-shrink-0">
@@ -17,7 +13,7 @@ export default function VideoCard({ video }) {
           <img
             src={video.poster}
             alt={video.title}
-            className={`w-full h-full object-cover ${!video.isAvailable ? 'grayscale' : ''}`}
+            className="w-full h-full object-cover"
             onError={() => setImgError(true)}
           />
         ) : (
@@ -39,20 +35,6 @@ export default function VideoCard({ video }) {
           </div>
         )}
 
-        {/* Availability badge - bottom of image */}
-        <div className="absolute bottom-0 left-0 right-0 px-2 pb-2">
-          {video.isAvailable ? (
-            <div className="flex items-center gap-1.5 bg-black/75 backdrop-blur-sm rounded-lg px-2 py-1 w-fit">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0" />
-              <span className="text-emerald-300 text-xs font-bold">현재 체험 가능</span>
-            </div>
-          ) : (
-            <div className="flex items-center gap-1.5 bg-black/75 backdrop-blur-sm rounded-lg px-2 py-1 w-fit">
-              <span className="w-1.5 h-1.5 rounded-full bg-gray-500 flex-shrink-0" />
-              <span className="text-gray-400 text-xs font-bold">현재 미운영</span>
-            </div>
-          )}
-        </div>
       </div>
 
       {/* Card body */}

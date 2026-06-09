@@ -3,7 +3,6 @@ import { videos } from '../data/videos';
 import VideoCard from './VideoCard';
 
 const FILTERS = [
-  { key: 'availableOnly', label: '체험 가능', test: (v) => v.isAvailable },
   { key: 'horrorOnly',    label: '공포',     test: (v) => v.isHorror },
   { key: 'coasterOnly',  label: '롤러코스터', test: (v) => v.isCoaster },
   { key: 'ownerPickOnly', label: '사장님 추천', test: (v) => v.ownerPick },
@@ -36,7 +35,6 @@ export default function VideoList() {
     });
   }, [search, active]);
 
-  const availableCount = videos.filter((v) => v.isAvailable).length;
   const hasActive = active.size > 0;
 
   return (
@@ -51,10 +49,6 @@ export default function VideoList() {
           <p className="text-gray-500 text-sm mb-4">
             원하는 체험을 번호로 찾아 직원에게 말씀해주세요.
           </p>
-          <div className="inline-flex items-center gap-2 bg-emerald-950/50 border border-emerald-800/40 text-emerald-400 text-xs font-bold px-4 py-2 rounded-full">
-            <span className="w-2 h-2 rounded-full bg-emerald-400" />
-            현재 {availableCount}개 영상 체험 가능
-          </div>
         </div>
 
         {/* Search */}
