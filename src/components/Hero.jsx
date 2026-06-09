@@ -59,7 +59,7 @@ export default function Hero() {
           앉는 순간,<br className="md:hidden" /> 현실이 움직인다.
         </p>
         <p className="text-gray-300 text-base md:text-lg mb-10 leading-relaxed">
-          약 4~6분, 놀이공원보다 가까운 짜릿함.<br />
+          놀이공원보다 가까운 짜릿함.<br />
           4D 입체 영상과 움직이는 의자가 만드는 특별한 체험.
         </p>
 

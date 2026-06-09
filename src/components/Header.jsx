@@ -8,6 +8,7 @@ export default function Header() {
     { label: '이용 방법', href: '#how-to-use' },
     { label: '요금 안내', href: '#pricing' },
     { label: '영상 선택', href: '#videos' },
+    { label: '매장 안내', href: '#store' },
     { label: 'FAQ', href: '#faq' },
   ];
 
