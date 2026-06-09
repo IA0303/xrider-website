@@ -49,7 +49,7 @@ export default function Pricing() {
                 ⏱️
               </div>
               <div>
-                <p className="text-white font-bold text-sm mb-0.5">평균 체험 시간 약 5분</p>
+                <p className="text-white font-bold text-sm mb-0.5">체험 시간 약 4~6분</p>
                 <p className="text-gray-500 text-xs">짧지만 강렬한 몰입 체험</p>
               </div>
             </div>

@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 
 const SLIDES = [
-  { src: '/images/store/store_high.jpg', alt: 'X라이더 매장' },
-  { src: '/images/store/store_3d.jpg', alt: 'X라이더 3D 체험' },
-  { src: '/images/store/store_high2.jpg', alt: 'X라이더 내부' },
-  { src: '/images/store/now_showing.jpg', alt: '현재 상영 중' },
+  { src: '/images/store/KakaoTalk_20260608_161326934.jpg', alt: 'X라이더 매장' },
+  { src: '/images/store/KakaoTalk_20260608_161326934_01.jpg', alt: 'X라이더 체험 공간' },
+  { src: '/images/store/KakaoTalk_20260608_161326934_02.jpg', alt: 'X라이더 모션 체어' },
+  { src: '/images/store/KakaoTalk_20260608_161326934_03.jpg', alt: 'X라이더 내부' },
 ];
 
 export default function Hero() {
@@ -60,7 +60,7 @@ export default function Hero() {
           앉는 순간,<br className="md:hidden" /> 현실이 움직인다.
         </p>
         <p className="text-gray-300 text-base md:text-lg mb-10 leading-relaxed">
-          단 5분, 놀이공원보다 가까운 짜릿함.<br />
+          약 4~6분, 놀이공원보다 가까운 짜릿함.<br />
           4D 입체 영상과 움직이는 의자가 만드는 특별한 체험.
         </p>
 

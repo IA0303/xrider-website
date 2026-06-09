@@ -1,15 +1,15 @@
 const FEATURES = [
   { icon: '🎬', title: '약 30개의 다양한 콘텐츠', desc: '롤러코스터, 공포, 우주, 탐험 등 다양한 테마의 영상' },
   { icon: '🪑', title: '4D 모션 체어', desc: '영상에 맞춰 실시간으로 움직이는 입체 체험 의자' },
-  { icon: '⚡', title: '평균 5분의 강렬함', desc: '짧지만 강렬한 경험, 부담 없이 즐기는 실내 어트랙션' },
+  { icon: '⚡', title: '약 4~6분의 강렬한 체험', desc: '짧지만 강렬한 경험, 부담 없이 즐기는 실내 어트랙션' },
   { icon: '🚫', title: '예약 없이 즉시 이용', desc: '방문 후 바로 영상을 선택하고 탑승 가능' },
 ];
 
 const STORE_PHOTOS = [
-  { src: '/images/store/store_main.jpg', alt: '매장 내부' },
-  { src: '/images/store/store_01.jpg', alt: '체험 공간' },
-  { src: '/images/store/store_02.jpg', alt: '모션 체어' },
-  { src: '/images/store/store_03.jpg', alt: '체험 현장' },
+  { src: '/images/store/KakaoTalk_20260608_161326934_04.jpg', alt: '매장 내부' },
+  { src: '/images/store/KakaoTalk_20260608_161326934_05.jpg', alt: '체험 공간' },
+  { src: '/images/store/KakaoTalk_20260608_161326934_06.jpg', alt: '모션 체어' },
+  { src: '/images/store/KakaoTalk_20260608_161326934_07.jpg', alt: '체험 현장' },
 ];
 
 export default function About() {

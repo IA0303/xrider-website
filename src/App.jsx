@@ -4,6 +4,7 @@ import About from './components/About';
 import HowToUse from './components/HowToUse';
 import Pricing from './components/Pricing';
 import VideoList from './components/VideoList';
+import RecommendedCombos from './components/RecommendedCombos';
 import SafetyNotice from './components/SafetyNotice';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
@@ -18,6 +19,7 @@ function App() {
         <HowToUse />
         <Pricing />
         <VideoList />
+        <RecommendedCombos />
         <SafetyNotice />
         <FAQ />
       </main>
