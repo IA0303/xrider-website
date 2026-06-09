@@ -6,14 +6,17 @@ import Pricing from './components/Pricing';
 import VideoList from './components/VideoList';
 import RecommendedCombos from './components/RecommendedCombos';
 import SafetyNotice from './components/SafetyNotice';
+import StoreInfo from './components/StoreInfo';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import MobileStoreBar from './components/MobileStoreBar';
 
 function App() {
   return (
     <div className="min-h-screen bg-black text-white">
       <Header />
-      <main>
+      {/* pb-16 on mobile accounts for the fixed bottom bar */}
+      <main className="pb-16 md:pb-0">
         <Hero />
         <About />
         <HowToUse />
@@ -21,9 +24,11 @@ function App() {
         <VideoList />
         <RecommendedCombos />
         <SafetyNotice />
+        <StoreInfo />
         <FAQ />
       </main>
       <Footer />
+      <MobileStoreBar />
     </div>
   );
 }
