@@ -6,10 +6,10 @@ const FEATURES = [
 ];
 
 const STORE_PHOTOS = [
-  { src: '/images/store/KakaoTalk_20260608_161326934_04.jpg', alt: '매장 내부' },
-  { src: '/images/store/KakaoTalk_20260608_161326934_05.jpg', alt: '체험 공간' },
-  { src: '/images/store/KakaoTalk_20260608_161326934_06.jpg', alt: '모션 체어' },
-  { src: '/images/store/KakaoTalk_20260608_161326934_07.jpg', alt: '체험 현장' },
+  { src: '/images/store/가게입구.jpeg', alt: '매장 입구' },
+  { src: '/images/store/가게내부.webp', alt: '매장 내부' },
+  { src: '/images/store/주의사항.webp', alt: '주의사항 안내' },
+  { src: '/images/store/KakaoTalk_20260608_161326934_05.jpg', alt: '체험 현장' },
 ];
 
 export default function About() {
@@ -49,8 +49,8 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-10 items-center mb-16">
           <div>
             <h3 className="text-2xl font-bold text-white mb-4 leading-snug">
-              포스터만 보고 고르지 마세요.<br />
-              <span className="text-red-500">이제 설명을 보고 선택하세요.</span>
+              스릴, 공포, 모험까지<br />
+              <span className="text-red-500">원하는 체험을 직접 선택하세요.</span>
             </h3>
             <p className="text-gray-400 leading-relaxed mb-4">
               X라이더는 4D 입체 영상과 모션 체어가 결합된 실내 체험형 어트랙션입니다.
@@ -66,7 +66,7 @@ export default function About() {
               href="#videos"
               className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition-colors"
             >
-              영상 목록 보기 →
+              영상 둘러보기 →
             </a>
           </div>
 

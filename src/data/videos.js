@@ -55,7 +55,7 @@ export const videos = [
   },
   {
     id: 7,
-    title: "나우 쇼잉",
+    title: "도살자",
     poster: "/images/posters/NOWshowing 7번.jpg",
     tagline: "공포의 어둠 속으로 떨어지는 극한의 체험",
     isAvailable: true,
@@ -163,7 +163,7 @@ export const videos = [
   },
   {
     id: 19,
-    title: "호러 파크",
+    title: "저주받은 공원",
     poster: "/images/posters/Horror-Park 19번.jpg",
     tagline: "공포 파크에서 펼쳐지는 극한의 공포 체험",
     isAvailable: true,
@@ -172,7 +172,7 @@ export const videos = [
   },
   {
     id: 20,
-    title: "DDR 댄스 체험",
+    title: "DDR",
     poster: "/images/posters/poster_DDR_2_copy 20번.jpg",
     tagline: "리듬에 맞춰 즐기는 신나는 댄스 체험",
     isAvailable: true,
@@ -235,7 +235,7 @@ export const videos = [
   },
   {
     id: 27,
-    title: "희생 (Sacrifice)",
+    title: "저주받은 병원",
     poster: "/images/posters/sacrifice 27번.jpg",
     tagline: "고대 신전의 의식 속으로 빠져드는 공포 체험",
     isAvailable: true,

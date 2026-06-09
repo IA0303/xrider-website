@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react';
 
 const SLIDES = [
-  { src: '/images/store/KakaoTalk_20260608_161326934.jpg', alt: 'X라이더 매장' },
-  { src: '/images/store/KakaoTalk_20260608_161326934_01.jpg', alt: 'X라이더 체험 공간' },
-  { src: '/images/store/KakaoTalk_20260608_161326934_02.jpg', alt: 'X라이더 모션 체어' },
-  { src: '/images/store/KakaoTalk_20260608_161326934_03.jpg', alt: 'X라이더 내부' },
+  { src: '/images/store/store_3d.jpg', alt: 'X라이더 3D 체험' },
+  { src: '/images/store/store_high.jpg', alt: 'X라이더 매장' },
+  { src: '/images/store/store_high2.jpg', alt: 'X라이더 내부' },
 ];
 
 export default function Hero() {
@@ -64,19 +63,13 @@ export default function Hero() {
           4D 입체 영상과 움직이는 의자가 만드는 특별한 체험.
         </p>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+        {/* CTA Button */}
+        <div className="flex justify-center">
           <a
             href="#videos"
-            className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-lg text-lg transition-all hover:scale-105 hover:shadow-lg hover:shadow-red-600/40"
+            className="bg-red-600 hover:bg-red-700 text-white font-bold px-10 py-4 rounded-lg text-lg transition-all hover:scale-105 hover:shadow-lg hover:shadow-red-600/40"
           >
             영상 둘러보기 →
-          </a>
-          <a
-            href="#videos"
-            className="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-8 py-4 rounded-lg text-lg transition-all backdrop-blur-sm"
-          >
-            처음 방문 추천
           </a>
         </div>
 

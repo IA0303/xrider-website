@@ -58,7 +58,9 @@ export default function HowToUse() {
             >
               {/* Step number */}
               <div className="flex items-start justify-between mb-3">
-                <span className="text-3xl font-black text-red-600/20 leading-none">{s.step}</span>
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-red-600/15 border border-red-600/40 flex-shrink-0">
+                  <span className="text-lg font-black text-red-500 leading-none">{s.step}</span>
+                </div>
                 <span className="text-2xl">{s.icon}</span>
               </div>
 
@@ -70,7 +72,7 @@ export default function HowToUse() {
               )}
 
               <h3 className="text-white font-bold text-base mb-2">{s.title}</h3>
-              <p className="text-gray-500 text-xs leading-relaxed">{s.desc}</p>
+              <p className="text-gray-400 text-xs leading-relaxed">{s.desc}</p>
             </div>
           ))}
         </div>

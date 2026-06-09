@@ -7,7 +7,7 @@ export default function VideoCard({ video }) {
     <div
       className={`card-hover flex flex-col h-full rounded-2xl overflow-hidden border transition-all ${
         video.isAvailable
-          ? 'bg-zinc-900 border-white/5 hover:border-white/15'
+          ? 'bg-zinc-900 border-white/5 hover:border-white/20'
           : 'bg-zinc-950 border-white/5 opacity-60'
       }`}
     >
@@ -28,7 +28,7 @@ export default function VideoCard({ video }) {
         )}
 
         {/* Number badge - top left */}
-        <div className="absolute top-2 left-2 bg-black/80 backdrop-blur-sm text-white text-xs font-black px-2 py-1 rounded-md leading-none">
+        <div className="absolute top-2 left-2 bg-black/85 backdrop-blur-sm text-white text-xs font-black px-2 py-1 rounded-md leading-none">
           No.{video.id}
         </div>
 
@@ -42,12 +42,12 @@ export default function VideoCard({ video }) {
         {/* Availability badge - bottom of image */}
         <div className="absolute bottom-0 left-0 right-0 px-2 pb-2">
           {video.isAvailable ? (
-            <div className="flex items-center gap-1.5 bg-black/70 backdrop-blur-sm rounded-lg px-2 py-1 w-fit">
+            <div className="flex items-center gap-1.5 bg-black/75 backdrop-blur-sm rounded-lg px-2 py-1 w-fit">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0" />
               <span className="text-emerald-300 text-xs font-bold">현재 체험 가능</span>
             </div>
           ) : (
-            <div className="flex items-center gap-1.5 bg-black/70 backdrop-blur-sm rounded-lg px-2 py-1 w-fit">
+            <div className="flex items-center gap-1.5 bg-black/75 backdrop-blur-sm rounded-lg px-2 py-1 w-fit">
               <span className="w-1.5 h-1.5 rounded-full bg-gray-500 flex-shrink-0" />
               <span className="text-gray-400 text-xs font-bold">현재 미운영</span>
             </div>
@@ -58,26 +58,28 @@ export default function VideoCard({ video }) {
       {/* Card body */}
       <div className="flex flex-col flex-1 p-3 gap-2">
         {/* Title */}
-        <h3 className="text-white font-bold text-sm leading-snug line-clamp-2">
+        <h3 className="text-white font-bold text-sm leading-snug">
           {video.title}
         </h3>
 
         {/* Badges */}
-        <div className="flex flex-wrap gap-1">
-          {video.ownerPick && (
-            <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40">
-              🏆 사장님 추천
-            </span>
-          )}
-          {video.isHorror && (
-            <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-red-900/50 text-red-300 border border-red-700/40">
-              🟥 공포 테마
-            </span>
-          )}
-        </div>
+        {(video.ownerPick || video.isHorror) && (
+          <div className="flex flex-wrap gap-1">
+            {video.ownerPick && (
+              <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                🏆 사장님 추천
+              </span>
+            )}
+            {video.isHorror && (
+              <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-red-900/50 text-red-300 border border-red-700/40">
+                🟥 공포 테마
+              </span>
+            )}
+          </div>
+        )}
 
         {/* Tagline */}
-        <p className="text-gray-500 text-xs leading-relaxed line-clamp-2 mt-auto">
+        <p className="text-gray-300 text-xs leading-relaxed mt-auto">
           {video.tagline}
         </p>
       </div>

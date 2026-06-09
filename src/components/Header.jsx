@@ -35,7 +35,7 @@ export default function Header() {
             href="#videos"
             className="text-sm bg-red-600 hover:bg-red-700 text-white px-4 py-1.5 rounded font-bold transition-colors"
           >
-            영상 선택하기
+            영상 둘러보기
           </a>
         </nav>
 
@@ -72,7 +72,7 @@ export default function Header() {
               className="block text-center bg-red-600 text-white py-3 rounded font-bold"
               onClick={() => setOpen(false)}
             >
-              영상 선택하기
+              영상 둘러보기
             </a>
           </div>
         </div>
