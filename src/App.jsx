@@ -1,6 +1,5 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
-import QuickNav from './components/QuickNav';
 import About from './components/About';
 import HowToUse from './components/HowToUse';
 import Pricing from './components/Pricing';
@@ -18,7 +17,6 @@ function App() {
       <Header />
       <main className="pb-16 md:pb-0">
         <Hero />
-        <QuickNav />
         <About />
         <HowToUse />
         <Pricing />
